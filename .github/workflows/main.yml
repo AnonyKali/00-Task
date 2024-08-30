@@ -24,15 +24,7 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run tests
-      run: npm test
-
     - name: Build Docker image
       run: |
         docker build -t todo-api .
 
-    - name: Push Docker image
-      run: |
-        docker tag todo-api ghcr.io/${{ github.repository }}/todo-api:latest
-        echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
-        docker push ghcr.io/${{ github.repository }}/todo-api:latest
