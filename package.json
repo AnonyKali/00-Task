@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha src/test/**/*.test.js"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "chai": "^5.1.1",
-    "mocha": "^10.7.3"
+    "mocha": "^10.7.3",
+    "sinon": "^15.0.0"
   }
 }

@@ -8,7 +8,7 @@ const options = {
         },
         servers: [
             {
-                url: 'http://backend3server.serv00.net:4004'
+                url: 'http://localhost:4004'
             }
         ]
     },
