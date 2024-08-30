@@ -1,8 +1,8 @@
 const chai = require('chai');
 const expect = chai.expect;
 const sinon = require('sinon');
-const taskController = require('../src/controllers/taskController');
-const Task = require('../src/models/taskModel');
+const taskController = require('../controllers/taskController');
+const Task = require('../models/taskModel');
 
 describe('Task Controller', () => {
     describe('createTask', () => {
