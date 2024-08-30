@@ -5,6 +5,16 @@ const taskController = require('../controllers/taskController');
 const Task = require('../models/taskModel');
 
 describe('Task Controller', () => {
+    let chai, expect, sinon, taskController, Task;
+
+    before(async () => {
+        chai = (await import('chai')).default;
+        expect = chai.expect;
+        sinon = (await import('sinon')).default;
+        taskController = (await import('../controllers/taskController')).default;
+        Task = (await import('../models/taskModel')).default;
+    });
+
     describe('createTask', () => {
         it('should create a new task', (done) => {
             const req = {
