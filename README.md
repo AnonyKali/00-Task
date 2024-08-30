@@ -5,7 +5,7 @@
 First, clone the repository to your local machine:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/AnonyKali/00-Task.git
 ```
 
 ### 2. Navigate to Project Directory
